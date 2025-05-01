@@ -1,5 +1,5 @@
 /*
-** EPITECH PROJECT, 2025
+** PamplemomM PROJECT, 2025
 ** keys_controls.c
 ** File description:
 ** the file for the keys controls.

@@ -1,5 +1,5 @@
 /*
-** EPITECH PROJECT, 2025
+** PamplemomM PROJECT, 2025
 ** user_controls.c
 ** File description:
 ** user file for the user controls.

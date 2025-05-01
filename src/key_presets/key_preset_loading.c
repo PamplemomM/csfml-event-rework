@@ -1,5 +1,5 @@
 /*
-** EPITECH PROJECT, 2025
+** PamplemomM PROJECT, 2025
 ** key_preset_loading.c
 ** File description:
 ** The file for loading the user key presets.

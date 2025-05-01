@@ -1,5 +1,5 @@
 /*
-** EPITECH PROJECT, 2025
+** PamplemomM PROJECT, 2025
 ** key_preset_saving.c
 ** File description:
 ** The file for saving the user key presets.
