@@ -58,6 +58,7 @@ typedef struct controls_s {
     keybind_t bind;
     sfKeyCode key;
     int is_pressed;
+    int is_single_pressed;
 } controls_t;
 
 typedef struct user_s {

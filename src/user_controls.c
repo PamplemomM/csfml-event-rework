@@ -96,6 +96,7 @@ static int update_key(sfEvent event, int is_pressed)
     while (controls != NULL) {
         if (event.key.code == controls->key) {
             controls->is_pressed = is_pressed;
+            controls->is_single_pressed = is_pressed;
             user->is_key_pressed = detect_if_key_pressed(controls);
             return SUCCESS;
         }
