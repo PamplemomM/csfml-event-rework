@@ -29,7 +29,7 @@ static int add_new_control(controls_t **head, keybind_t bind, sfKeyCode key)
 static controls_t *parse_key_preset(char *str)
 {
     controls_t *head = NULL;
-    int length = my_strlen(str);
+    int length = strlen(str);
     int cpt = 3;
 
     while (cpt < length) {
