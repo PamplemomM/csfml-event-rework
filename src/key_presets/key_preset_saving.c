@@ -59,7 +59,9 @@ static int save_single_preset(presets_t *current, int cpt)
     filename = MERGESTR("save_data/keybinds/keyboard_preset", number);
     printf("%s\n", str);
     bc_save(str, filename);
-    SDFREE("%1 %1 %1", &str, &filename, &number);
+    free(str);
+    free(filename);
+    free(number);
     return SUCCESS;
 }
 
