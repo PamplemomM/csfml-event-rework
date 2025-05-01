@@ -13,7 +13,7 @@ It is a rework of the CSFML event library, designed to improve functionality and
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/csfml-event-rework.git
+    git clone git@github.com:PamplemomM/csfml-event-rework.git
     ```
 2. Navigate to the project directory:
     ```bash
@@ -21,6 +21,20 @@ It is a rework of the CSFML event library, designed to improve functionality and
     ```
 3. Build the project using your preferred build system.
 
+
+### Testing
+
+To test the project, follow these steps:
+
+1. Build the project:
+    ```bash
+    make
+    ```
+2. Run the testing executable:
+    ```bash
+    ./event_rework
+    ```
+3. Feel free to check how the `main_test.c` works to adapt it to your project.
 
 
 ## License
