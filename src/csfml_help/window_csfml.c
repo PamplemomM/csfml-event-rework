@@ -24,6 +24,7 @@ void create_window(unsigned int width, unsigned int height, char const *name)
     WINDOW = sfRenderWindow_create(video_mode, name,
     sfDefaultStyle, NULL);
     sfRenderWindow_setFramerateLimit(WINDOW, 60);
+    sfRenderWindow_setKeyRepeatEnabled(WINDOW, sfFalse);
 }
 
 void destroy_window(void)
