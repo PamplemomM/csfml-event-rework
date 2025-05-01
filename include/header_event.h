@@ -119,6 +119,9 @@ char *int_to_str(int nbr);
 // --- number_arsenal.c ---
 int digitcount(int nbr);
 
+// --- open_directory.c ---
+char **open_directory(char *folder);
+
 // --- read_filelib.c ---
 char *open_file(char const *filepath);
 
