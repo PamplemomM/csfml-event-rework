@@ -1,5 +1,5 @@
 /*
-** EPITECH PROJECT, 2025
+** PamplemomM PROJECT, 2025
 ** string_arsenal.c
 ** File description:
 ** An arsenal of functions that concern strings.

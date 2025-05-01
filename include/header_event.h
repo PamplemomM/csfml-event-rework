@@ -26,6 +26,7 @@
 
     #define MERGESTR(...) merge_str(__VA_ARGS__, NULL)
 
+    #define WINDOW (*get_window())
     #define USER (*get_user())
 
 
@@ -116,6 +117,13 @@ char *int_to_str(int nbr);
 
 // --- number_arsenal.c ---
 int digitcount(int nbr);
+
+// --------- CSFML HELP FUNCTIONS --------
+
+// --- window_csfml.c ---
+sfRenderWindow **get_window(void);
+void create_window(unsigned int width, unsigned int height, char const *name);
+void destroy_window(void);
 
 
 #endif /* WOLF_H */
