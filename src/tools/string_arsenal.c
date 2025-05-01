@@ -46,7 +46,7 @@ char *merge_str(char *first, ...)
         if (next == NULL)
             break;
         tmp = merge_two_strings(str, next);
-        OMNIFREE(str, 1);
+        free(str);
         if (tmp == NULL)
             break;
         str = tmp;

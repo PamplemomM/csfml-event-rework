@@ -72,8 +72,10 @@ int load_presets(void)
         if (filecontent == NULL)
             return printf("Can't read %s.", folder[i]);
         add_presets_fromfile(filecontent, i);
-        OMNIFREE(filecontent, 1);
+        free(filecontent);
     }
-    SDFREE("%2 %1", &folder, &filecontent);
+    for (int i = 0; folder[i] != NULL; i++)
+        free(folder[i]);
+    free(folder);
     return SUCCESS;
 }
