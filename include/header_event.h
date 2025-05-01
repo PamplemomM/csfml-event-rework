@@ -97,6 +97,9 @@ int free_all_presets(void);
 
 // ----- USER DATA -----
 
+// --- single_control.c ---
+int is_single_pressed(keybind_t bind);
+
 // --- user.c ---
 user_t **get_user(void);
 user_t *init_user(void);
