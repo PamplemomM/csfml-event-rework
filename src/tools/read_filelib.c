@@ -22,8 +22,10 @@ static char *read_line(int fd, int size)
             break;
         i++;
     }
-    if (res <= 0 && i == 0)
-        return SDFREE("%1", &buffer);
+    if (res <= 0 && i == 0) {
+        free(buffer);
+        return NULL;
+    }
     buffer[i] = '\0';
     return buffer;
 }
@@ -43,7 +45,7 @@ static char *dup_result(char *result, char *line, int len)
     if (temp == NULL)
         return NULL;
     result = temp;
-    my_strcpy(result + get_total_size(0), line);
+    strcpy(result + get_total_size(0), line);
     get_total_size(len);
     result[get_total_size(0)] = '\n';
     result[get_total_size(0) + 1] = '\0';
@@ -67,7 +69,7 @@ static char *read_file(int fd)
         free(line);
         line = read_line(fd, size);
         if (new_result == NULL)
-            return SDFREE("%1 %1", &new_result, &line);
+            return NULL;
         result = new_result;
     }
     free(line);
