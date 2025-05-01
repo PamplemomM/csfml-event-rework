@@ -66,7 +66,7 @@ static int my_sort_str_array(char **array)
     if (array == NULL || array[0] == NULL)
         return SUCCESS;
     for (int i = 0; array[i + 1] != NULL; i++) {
-        if (my_strcmp(array[i], array[i + 1]) >= 0) {
+        if (strcmp(array[i], array[i + 1]) >= 0) {
             tmp = array[i];
             array[i] = array[i + 1];
             array[i + 1] = tmp;

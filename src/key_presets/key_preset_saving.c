@@ -57,7 +57,6 @@ static int save_single_preset(presets_t *current, int cpt)
         return printf("Can't create the saving preset string.");
     number = int_to_str(cpt);
     filename = MERGESTR("save_data/keybinds/keyboard_preset", number);
-    printf("%s\n", str);
     bc_save(str, filename);
     free(str);
     free(filename);
