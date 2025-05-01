@@ -14,7 +14,7 @@ user_t **get_user(void)
     return &current_user;
 }
 
-user_t *init_user(char *name, int posx, int posy)
+user_t *init_user(void)
 {
     user_t *new_user = malloc(sizeof(user_t) * 1);
 

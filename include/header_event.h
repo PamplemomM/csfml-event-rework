@@ -98,7 +98,7 @@ int free_all_presets(void);
 
 // --- user.c ---
 user_t **get_user(void);
-user_t *init_user(char *name, int posx, int posy);
+user_t *init_user(void);
 void free_user(void);
 
 // --- user_controls.c ---
