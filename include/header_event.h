@@ -24,6 +24,8 @@
 
     #define KEYBINDS_STORAGE "save_data/keybinds/"
 
+    #define MERGESTR(...) merge_str(__VA_ARGS__, NULL)
+
     #define USER (*get_user())
 
 
@@ -104,6 +106,16 @@ int free_control(controls_t *ctrl);
 int is_pressed(keybind_t bind);
 int is_key_pressed(void);
 int update_controls(sfEvent event);
+
+
+// ------- C TOOL LIB FUNCTIONS --------
+
+// --- string_arsenal.c ---
+char *merge_str(char *first, ...);
+char *int_to_str(int nbr);
+
+// --- number_arsenal.c ---
+int digitcount(int nbr);
 
 
 #endif /* WOLF_H */
