@@ -40,6 +40,11 @@ typedef enum key_config_s {
     CUSTOM
 } key_config_t;
 
+typedef enum mouse_buttons_s {
+    LEFT,
+    RIGHT
+} mouse_buttons_t;
+
 typedef enum keybind_s {
     MV_FORWARD,
     MV_BACKWARDS,
@@ -62,6 +67,7 @@ typedef struct controls_s {
     keybind_t bind;
     sfKeyCode key;
     int is_pressed;
+    int is_released;
     int is_single_pressed;
 } controls_t;
 
@@ -111,6 +117,13 @@ int free_control(controls_t *ctrl);
 int is_pressed(keybind_t bind);
 int is_key_pressed(void);
 int update_controls(sfEvent event);
+
+// --- user_mouse.c ---
+int init_mouse(void);
+int update_mouse(sfEvent event);
+int is_mouse_pressed(mouse_buttons_t mouse);
+int is_mouse_single_pressed(mouse_buttons_t mouse);
+int is_mouse_released(mouse_buttons_t mouse);
 
 
 // ------- C TOOL LIB FUNCTIONS --------

@@ -21,6 +21,7 @@ int events(void)
         if (event.type == sfEvtClosed)
             sfRenderWindow_close(WINDOW);
         update_controls(event);
+        update_mouse(event);
     }
 }
 
@@ -46,6 +47,7 @@ int main(void)
     init_user();
     init_presets(QWERTY);
     load_presets();
+    init_mouse();
     run();
     save_presets();
     free_all_presets();

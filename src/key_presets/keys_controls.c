@@ -25,6 +25,7 @@ static int add_new_control(controls_t **head, keybind_t bind, sfKeyCode key)
     new_control->bind = bind;
     new_control->key = key;
     new_control->is_pressed = FALSE;
+    new_control->is_released = FALSE;
     new_control->is_single_pressed = FALSE;
     if (list != NULL)
         new_control->next = list;
